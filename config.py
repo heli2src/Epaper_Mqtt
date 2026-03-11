@@ -6,9 +6,9 @@ import gui.fonts.ezFBfont_timB10_ascii_14 as tfont14
 import gui.fonts.ezFBfont_timB14_full_21 as tfont21
 # import gui.fonts.ezFBfont_timB24_ascii_33 as tfont33
 
-SERVER = "192.168.178.28"
-WlPw = "54794944220007018253"
-WlSsid = "Elch-Box"
+SERVER = "xxx.xxx.xxx.xxx"
+WlPw = "your wlan password"
+WlSsid = "name from your wlan"
 Topic = "Epaper/state"
 
 epaper_update = 3*60           # update time for the epaper
