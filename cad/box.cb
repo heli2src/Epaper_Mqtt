@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CADFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="0.9.8.0" Name="box">
+  <layers>
+    <layer name="0" color="255,255,255">
+      <objects />
+      <ModificationCount>0</ModificationCount>
+    </layer>
+    <layer name="DEFAULT" color="255,255,255">
+      <objects>
+        <line id="1">
+          <ModificationCount>100</ModificationCount>
+          <mat m="Identity" />
+          <pts>
+            <p>42,54.5</p>
+            <p>42,28.5</p>
+          </pts>
+        </line>
+        <pline id="2" Closed="true">
+          <ModificationCount>98</ModificationCount>
+          <mat m="Identity" />
+          <pts>
+            <p>48,-2.44921270764475E-15,0</p>
+            <p>48,83,0</p>
+            <p>7.105427357601E-15,83,0</p>
+            <p>0,0,0</p>
+          </pts>
+        </pline>
+        <pline id="3" Closed="true">
+          <ModificationCount>99</ModificationCount>
+          <mat m="Identity" />
+          <pts>
+            <p>-1,-1,0</p>
+            <p>-1,84,0</p>
+            <p>43,84,0</p>
+            <p>43,-1,0</p>
+          </pts>
+        </pline>
+        <pline id="4" Closed="true">
+          <ModificationCount>97</ModificationCount>
+          <mat m="Identity" />
+          <pts>
+            <p>4.5,4.5,0</p>
+            <p>4.50000000000001,78.5,0</p>
+            <p>42.5,78.5,0</p>
+            <p>42.5,4.5,0</p>
+          </pts>
+        </pline>
+        <circle id="5" c="24,41.5,0" d="12">
+          <ModificationCount>15</ModificationCount>
+          <mat m="Identity" />
+        </circle>
+      </objects>
+      <ModificationCount>0</ModificationCount>
+    </layer>
+  </layers>
+  <MachiningOptions>
+    <OutFile>G:\Tasche_oben.nc</OutFile>
+    <Stock>
+      <PMin>0,0</PMin>
+      <PMax>0,0</PMax>
+      <Color>255,165,0</Color>
+    </Stock>
+    <ToolProfile>Unspecified</ToolProfile>
+  </MachiningOptions>
+  <parts>
+    <part Name="Teil1">
+      <machineops>
+        <pocket Enabled="false">
+          <TargetDepth state="Value">-10</TargetDepth>
+          <DepthIncrement state="Value">2</DepthIncrement>
+          <FinalDepthIncrement state="Default">0</FinalDepthIncrement>
+          <CutOrdering state="Default">DepthFirst</CutOrdering>
+          <StepOver state="Default">0.4</StepOver>
+          <StepoverFeedrate state="Default">Eintauch-Vorschub</StepoverFeedrate>
+          <MillingDirection state="Default">Conventional</MillingDirection>
+          <CollisionDetection state="Default">True</CollisionDetection>
+          <LeadInMove state="Default" />
+          <LeadOutMove state="Default" />
+          <RegionFillStyle state="Default">InsideOutsideOffsets</RegionFillStyle>
+          <FinishStepover state="Default">0</FinishStepover>
+          <FinishStepoverAtTargetDepth state="Default">False</FinishStepoverAtTargetDepth>
+          <StockSurface state="Default">0</StockSurface>
+          <RoughingClearance state="Default">0</RoughingClearance>
+          <ClearancePlane state="Value">5</ClearancePlane>
+          <SpindleDirection state="Default">CW</SpindleDirection>
+          <SpindleSpeed state="Default">1000</SpindleSpeed>
+          <SpindleRange state="Default">0</SpindleRange>
+          <VelocityMode state="Default">Undefined</VelocityMode>
+          <primitive>
+            <prim>4</prim>
+            <prim>5</prim>
+          </primitive>
+          <Enabled>false</Enabled>
+          <WorkPlane state="Default">XY</WorkPlane>
+          <OptimisationMode state="Default">Experimental</OptimisationMode>
+          <RoughingFinishing state="Default">Roughing</RoughingFinishing>
+          <ToolDiameter state="Default">6</ToolDiameter>
+          <ToolNumber state="Value">6</ToolNumber>
+          <ToolProfile state="Default">EndMill</ToolProfile>
+          <PlungeFeedrate state="Default">300</PlungeFeedrate>
+          <CutFeedrate state="Value">600</CutFeedrate>
+          <MaxCrossoverDistance state="Value">0.7</MaxCrossoverDistance>
+          <StartPoint state="Default" />
+          <CustomMOPHeader state="Default" />
+          <CustomMOPFooter state="Default" />
+          <Name>Tasche_innnen</Name>
+        </pocket>
+        <profile Enabled="true">
+          <TargetDepth state="Value">-20.5</TargetDepth>
+          <DepthIncrement state="Value">2</DepthIncrement>
+          <FinalDepthIncrement state="Default">0</FinalDepthIncrement>
+          <CutOrdering state="Default">DepthFirst</CutOrdering>
+          <CutWidth state="Default">0</CutWidth>
+          <StepOver state="Default">0.4</StepOver>
+          <StepoverFeedrate state="Default">Eintauch-Vorschub</StepoverFeedrate>
+          <InsideOutside state="Value">Inside</InsideOutside>
+          <MillingDirection state="Default">Conventional</MillingDirection>
+          <CollisionDetection state="Default">True</CollisionDetection>
+          <CornerOvercut state="Default">False</CornerOvercut>
+          <LeadInMove state="Default" />
+          <LeadOutMove state="Default" />
+          <HoldingTabs state="Default">
+            <TabMethod>None</TabMethod>
+            <Width>3</Width>
+            <Height>3</Height>
+            <MinimumTabs>3</MinimumTabs>
+            <MaximumTabs>6</MaximumTabs>
+            <TabDistance>40</TabDistance>
+            <SizeThreshold>4</SizeThreshold>
+            <UseLeadIns>False</UseLeadIns>
+            <TabStyle>Triangle</TabStyle>
+          </HoldingTabs>
+          <SideProfile state="Default" />
+          <StockSurface state="Default">0</StockSurface>
+          <RoughingClearance state="Default">0</RoughingClearance>
+          <ClearancePlane state="Default">3</ClearancePlane>
+          <SpindleDirection state="Default">CW</SpindleDirection>
+          <SpindleSpeed state="Default">1000</SpindleSpeed>
+          <SpindleRange state="Default">0</SpindleRange>
+          <VelocityMode state="Default">Undefined</VelocityMode>
+          <primitive>
+            <prim>4</prim>
+          </primitive>
+          <WorkPlane state="Default">XY</WorkPlane>
+          <OptimisationMode state="Default">Experimental</OptimisationMode>
+          <RoughingFinishing state="Default">Roughing</RoughingFinishing>
+          <ToolDiameter state="Default">6</ToolDiameter>
+          <ToolNumber state="Value">6</ToolNumber>
+          <ToolProfile state="Default">EndMill</ToolProfile>
+          <PlungeFeedrate state="Default">300</PlungeFeedrate>
+          <CutFeedrate state="Value">600</CutFeedrate>
+          <MaxCrossoverDistance state="Default">0.7</MaxCrossoverDistance>
+          <StartPoint state="Default" />
+          <CustomMOPHeader state="Default" />
+          <CustomMOPFooter state="Default" />
+          <Name>Tasche oben</Name>
+        </profile>
+        <pocket Enabled="false">
+          <TargetDepth state="Value">-5</TargetDepth>
+          <DepthIncrement state="Value">2</DepthIncrement>
+          <FinalDepthIncrement state="Default">0</FinalDepthIncrement>
+          <CutOrdering state="Default">DepthFirst</CutOrdering>
+          <StepOver state="Default">0.4</StepOver>
+          <StepoverFeedrate state="Default">Eintauch-Vorschub</StepoverFeedrate>
+          <MillingDirection state="Default">Conventional</MillingDirection>
+          <CollisionDetection state="Default">True</CollisionDetection>
+          <LeadInMove state="Default" />
+          <LeadOutMove state="Default" />
+          <RegionFillStyle state="Default">InsideOutsideOffsets</RegionFillStyle>
+          <FinishStepover state="Default">0</FinishStepover>
+          <FinishStepoverAtTargetDepth state="Default">False</FinishStepoverAtTargetDepth>
+          <StockSurface state="Default">0</StockSurface>
+          <RoughingClearance state="Default">0</RoughingClearance>
+          <ClearancePlane state="Default">3</ClearancePlane>
+          <SpindleDirection state="Default">CW</SpindleDirection>
+          <SpindleSpeed state="Default">1000</SpindleSpeed>
+          <SpindleRange state="Default">0</SpindleRange>
+          <VelocityMode state="Default">Undefined</VelocityMode>
+          <primitive>
+            <prim>3</prim>
+          </primitive>
+          <Enabled>false</Enabled>
+          <WorkPlane state="Default">XY</WorkPlane>
+          <OptimisationMode state="Default">Experimental</OptimisationMode>
+          <RoughingFinishing state="Default">Roughing</RoughingFinishing>
+          <ToolDiameter state="Default">6</ToolDiameter>
+          <ToolNumber state="Value">6</ToolNumber>
+          <ToolProfile state="Default">EndMill</ToolProfile>
+          <PlungeFeedrate state="Default">300</PlungeFeedrate>
+          <CutFeedrate state="Default">800</CutFeedrate>
+          <MaxCrossoverDistance state="Default">0.7</MaxCrossoverDistance>
+          <StartPoint state="Default" />
+          <CustomMOPHeader state="Default" />
+          <CustomMOPFooter state="Default" />
+          <Name>Vertiefung_vorne</Name>
+        </pocket>
+        <profile Enabled="false">
+          <TargetDepth state="Value">-12</TargetDepth>
+          <DepthIncrement state="Value">2</DepthIncrement>
+          <FinalDepthIncrement state="Default">0</FinalDepthIncrement>
+          <CutOrdering state="Default">DepthFirst</CutOrdering>
+          <CutWidth state="Default">0</CutWidth>
+          <StepOver state="Default">0.4</StepOver>
+          <StepoverFeedrate state="Default">Eintauch-Vorschub</StepoverFeedrate>
+          <InsideOutside state="Default">Outside</InsideOutside>
+          <MillingDirection state="Default">Conventional</MillingDirection>
+          <CollisionDetection state="Default">True</CollisionDetection>
+          <CornerOvercut state="Default">False</CornerOvercut>
+          <LeadInMove state="Default" />
+          <LeadOutMove state="Default" />
+          <HoldingTabs state="Default">
+            <TabMethod>None</TabMethod>
+            <Width>3</Width>
+            <Height>3</Height>
+            <MinimumTabs>3</MinimumTabs>
+            <MaximumTabs>6</MaximumTabs>
+            <TabDistance>40</TabDistance>
+            <SizeThreshold>4</SizeThreshold>
+            <UseLeadIns>False</UseLeadIns>
+            <TabStyle>Triangle</TabStyle>
+          </HoldingTabs>
+          <SideProfile state="Default" />
+          <StockSurface state="Default">0</StockSurface>
+          <RoughingClearance state="Default">0</RoughingClearance>
+          <ClearancePlane state="Default">3</ClearancePlane>
+          <SpindleDirection state="Default">CW</SpindleDirection>
+          <SpindleSpeed state="Default">1000</SpindleSpeed>
+          <SpindleRange state="Default">0</SpindleRange>
+          <VelocityMode state="Default">Undefined</VelocityMode>
+          <primitive>
+            <prim>1</prim>
+          </primitive>
+          <Enabled>false</Enabled>
+          <WorkPlane state="Default">XY</WorkPlane>
+          <OptimisationMode state="Default">Experimental</OptimisationMode>
+          <RoughingFinishing state="Default">Roughing</RoughingFinishing>
+          <ToolDiameter state="Default">6</ToolDiameter>
+          <ToolNumber state="Value">6</ToolNumber>
+          <ToolProfile state="Default">EndMill</ToolProfile>
+          <PlungeFeedrate state="Default">300</PlungeFeedrate>
+          <CutFeedrate state="Default">800</CutFeedrate>
+          <MaxCrossoverDistance state="Default">0.7</MaxCrossoverDistance>
+          <StartPoint state="Default" />
+          <CustomMOPHeader state="Default" />
+          <CustomMOPFooter state="Default" />
+          <Name>Schlitz</Name>
+        </profile>
+        <profile Enabled="false">
+          <TargetDepth state="Value">-20.5</TargetDepth>
+          <DepthIncrement state="Value">2</DepthIncrement>
+          <FinalDepthIncrement state="Default">0</FinalDepthIncrement>
+          <CutOrdering state="Default">DepthFirst</CutOrdering>
+          <CutWidth state="Default">0</CutWidth>
+          <StepOver state="Default">0.4</StepOver>
+          <StepoverFeedrate state="Default">Eintauch-Vorschub</StepoverFeedrate>
+          <InsideOutside state="Default">Outside</InsideOutside>
+          <MillingDirection state="Default">Conventional</MillingDirection>
+          <CollisionDetection state="Default">True</CollisionDetection>
+          <CornerOvercut state="Default">False</CornerOvercut>
+          <HoldingTabs state="Default">
+            <TabMethod>None</TabMethod>
+            <Width>3</Width>
+            <Height>3</Height>
+            <MinimumTabs>3</MinimumTabs>
+            <MaximumTabs>6</MaximumTabs>
+            <TabDistance>40</TabDistance>
+            <SizeThreshold>4</SizeThreshold>
+            <UseLeadIns>False</UseLeadIns>
+            <TabStyle>Triangle</TabStyle>
+          </HoldingTabs>
+          <StockSurface state="Default">0</StockSurface>
+          <RoughingClearance state="Default">0</RoughingClearance>
+          <ClearancePlane state="Value">5</ClearancePlane>
+          <SpindleDirection state="Default">CW</SpindleDirection>
+          <SpindleSpeed state="Default">1000</SpindleSpeed>
+          <SpindleRange state="Default">0</SpindleRange>
+          <VelocityMode state="Default">Undefined</VelocityMode>
+          <primitive>
+            <prim>2</prim>
+          </primitive>
+          <Enabled>false</Enabled>
+          <WorkPlane state="Default">XY</WorkPlane>
+          <OptimisationMode state="Default">Experimental</OptimisationMode>
+          <RoughingFinishing state="Default">Roughing</RoughingFinishing>
+          <ToolDiameter state="Default">6</ToolDiameter>
+          <ToolNumber state="Value">6</ToolNumber>
+          <ToolProfile state="Default">EndMill</ToolProfile>
+          <PlungeFeedrate state="Default">300</PlungeFeedrate>
+          <CutFeedrate state="Value">600</CutFeedrate>
+          <MaxCrossoverDistance state="Default">0.7</MaxCrossoverDistance>
+          <Name>Aussen</Name>
+        </profile>
+      </machineops>
+      <Stock>
+        <PMin>0,0</PMin>
+        <PMax>0,0</PMax>
+        <Color>255,165,0</Color>
+      </Stock>
+      <ToolProfile>Unspecified</ToolProfile>
+      <Nesting>
+        <BasePoint>0,0</BasePoint>
+        <NestMethod>None</NestMethod>
+      </Nesting>
+    </part>
+  </parts>
+  <ActiveLayer>DEFAULT</ActiveLayer>
+  <ActivePart>Teil1</ActivePart>
+</CADFile>
