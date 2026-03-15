@@ -6,9 +6,9 @@ import gui.fonts.ezFBfont_timB10_ascii_14 as tfont14
 import gui.fonts.ezFBfont_timB14_full_21 as tfont21
 # import gui.fonts.ezFBfont_timB24_ascii_33 as tfont33
 
-SERVER = "xxx.xxx.xxx.xxx"
-WlPw = "your wlan password"
-WlSsid = "name from your wlan"
+SERVER = "your Broker IP-Adress"
+WlPw = "your Wlan passwort"
+WlSsid = "your Network name"
 Topic = "Epaper/state"
 
 epaper_update = 3*60           # update time for the epaper
@@ -37,7 +37,7 @@ CONTENT = {
         "R": {
             "c": ["windrose", tfont21],
             "p": [sxroom + 0*line2gap, line1],
-            "v": []},
+            "h": ["hz_aussen"]},
         "E": {      # Netz                                       # if len("E") < 2 than no name will be placed
             "c": ["measure_power_meter", tfont21],               # c = content
             "p": [sxroom, line2],                   # p = placement (x, y)
@@ -45,18 +45,20 @@ CONTENT = {
         "S": {                                                   # Solar
             "c": ["measure_photovoltaic_inst", tfont21],
             "p": [sxroom + 115, line2],
-            "v": ["sma_solar"]},
+            "v": ["hz_koll", "sma_solar"]},
         "B": {                                                   # Batterie
             "c": ["measure_battery_75", tfont21],
             "p": [sxroom + 220, line2],
             "h": ["battery_power", "battery_store", "battery_deliver"]},
         "K": {                                                   # Kessel
             "c": ["sani_buffer_temp_all", tfont21],
-            "p": [sxroom + 400, line2],
-            "v": ["heating_power"]},                
+            "p": [sxroom + 395, line2],
+            "h": ["hz_oben", "hz_mitte", "hz_unten", "heating_power"],
+            # "h": ["heating_power"]
+            },
         "W": {                                                    # Wallbox
             "c": ["wb_station", tfont21],
-            "p": [sxroom + 550, line2],
+            "p": [sxroom + 560, line2],
             "h": ["wbox_power", "wbox_actual", "wbox_total"]},
         "Werken": {
             "c": ["scene_workshop", tfont21],
@@ -111,7 +113,18 @@ TOPICS = {"Epaper": {
               "store": ["battery_store", "4.0f", " Wh"],
               "deliver": ["battery_deliver", "4.0f", " Wh"],
               "bat_state": ["battery_state", "2.0f"],              
-              },          
+              },
+          "Heizung": {
+              "Aussentemperatur": ["hz_aussen", "4.1f", " C"],              
+              "Kollektor": {
+                  "Temperatur": ["hz_koll", "4.1f", " C"],
+                  },
+              "Speicher": {
+                  "Oben": ["hz_oben", "4.1f", " C"],
+                  "Mitte": ["hz_mitte", "4.1f", " C"],
+                  "Unten": ["hz_unten", "4.1f", " C"],
+                  },
+              },
           "HeatingRod": {
               "power": ["heating_power", "4.0f", " W"],
               },

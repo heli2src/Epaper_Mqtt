@@ -5,6 +5,7 @@ from gui.core.writer import Writer
 # from gui.core.nanogui import refresh
 # from gui.widgets.meter import Meter
 from gui.widgets.label import Label
+import gui.fonts.ezFBfont_timB14_full_21 as tfont21
 
 
 class Tiles():
@@ -98,6 +99,13 @@ class Tiles():
                     display1.hline(line[0], line[1]+w, line[3]-line[1], 1)
                 else:
                     display1.hline(line[0]+w, line[1], line[2]-line[0], 1)
+                    
+    def printf(self, text, display, x=150, y= 200, font=tfont21):
+        wr = Writer(display, font, verbose=False)
+        for t in text.split('\n'):
+            Label(wr, y, 150, wr.stringlen(t)).value(t)
+            y += 30
+
 
 if __name__ == "__main__":
     from color_setup import ssd
@@ -114,5 +122,6 @@ if __name__ == "__main__":
     tiles.tiles2display(ssd, ssdred)
     tiles.text2display(ssd, ssdred)
     tiles.lines2display(ssd)
+    tiles.printf("This is a text\nline 1\nline2", ssdred, y=10)
     ssdred.show()
     ssd.show()

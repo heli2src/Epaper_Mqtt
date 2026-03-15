@@ -46,6 +46,7 @@ class WlanMqtt():
         """
         self.led = led    # Status LED
         self.mqtt_result = {}
+        self.msg = ""
         while True:
             status = self._wlanConnect(wlSsid, wlPw)
             if status >= 3:
@@ -123,7 +124,10 @@ class WlanMqtt():
         wlan = network.WLAN(network.STA_IF)
         if not wlan.isconnected():
             print('WLAN setup connection')
+            wlan.deinit()            
             wlan.active(True)
+            print('WLAN enabled')
+            time.sleep(2)
             wlan.connect(wlSsid, wlPw)
             for i in range(10):
                 status = wlan.status()
